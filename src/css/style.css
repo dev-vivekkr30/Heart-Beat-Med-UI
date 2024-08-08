@@ -1,0 +1,822 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap');
+
+/* root */
+:root {
+    /* font */
+    --main-font: "DM Sans", sans-serif;
+    /* Primary-color */
+    --primary-light: #e6f1f8;
+    --primary-light-hover: #d9eaf4;
+    --primary-light-active: #b0d4e9;
+    --primary-normal: #0075b8;
+    --primary-normal-hover: #0069a6;
+    --primary-normal-active: #005e93;
+    --primary-dark: #00588a;
+    --primary-dark-hover: #00466e;
+    --primary-dark-active: #003553;
+    --primary-darker: #002940;
+    /* Secondary-color */
+    --secondary-light: #eaf8ee;
+    --Secondary-light-hover: #dff5e6;
+    --Secondary-light-active: #bdeacb;
+    --Secondary-normal: #2abb56;
+    --Secondary-normal-hover: #26a84d;
+    --Secondary-normal-active: #229645;
+    --Secondary-dark: #208c41;
+    --Secondary-dark-hover: #197034;
+    --Secondary-dark-active: #135427;
+    --Secondary-darker: #0f411e;
+    /* Dark-color */
+    --dark-light: #b2bbc6;
+    --dark-light-hover: #a3adbb;
+    --dark-light-active: #909dad;
+    --dark-normal: #546881;
+    --dark-normal-hover: #47586e;
+    --dark-normal-active: #3d4c5e;
+    --dark-dark: #1d242d;
+    --dark-dark-hover: #151a20;
+    --dark-dark-active: #090b0e;
+    /* Surface-color */
+    --white: #ffffff;
+    --white-hover: #fcfdfd;
+    --white-active: #f5f7f9;
+    --light: #fcfdfd;
+    --light-hover: #f5f7f9;
+    --light-active: #f0f3f6;
+    --normal: #f9fafb;
+    --normal-hover: #f2f4f7;
+    --normal-active: #ebeef2;
+    --dark: #f6f8f9;
+
+    /* Shadow */
+    --shadow: 0px 4px 16px #00000015;
+}
+
+/* Typography */
+h1 {
+    font-size: 61px;
+    font-family: var(--main-font);
+}
+
+h2 {
+    font-size: 49px;
+    font-family: var(--main-font);
+}
+
+h3 {
+    font-size: 39px;
+    font-family: var(--main-font);
+}
+
+h4 {
+    font-size: 31px;
+    font-family: var(--main-font);
+}
+
+h5 {
+    font-size: 25px;
+    font-family: var(--main-font);
+}
+
+h6 {
+    font-size: 20px;
+    font-family: var(--main-font);
+}
+
+p {
+    font-size: 16px;
+    font-family: var(--main-font);
+}
+
+.small {
+    font-size: 13px;
+    font-family: var(--main-font);
+}
+
+.xsmall {
+    font-size: 10px;
+    font-family: var(--main-font);
+}
+
+.wrapper {
+    padding-top: 32px;
+}
+
+.dark-light {
+    color: var(--dark-light);
+}
+
+a {
+    text-decoration: none;
+    color: var(--dark-dark);
+    font-family: var(--main-font);
+    display: block;
+}
+
+.card:hover {
+    box-shadow: var(--shadow);
+}
+
+.text-link {
+    color: var(--primary-normal);
+    font-weight: 500;
+}
+
+
+/* buttons */
+
+/* slider buttons */
+.slider-nav .slider-btn {
+    height: 28px;
+    width: 28px;
+    color: var(--dark-dark-active);
+    background-color: var(--white);
+    border: 1px solid var(--dark-dark-active);
+    border-radius: 24px;
+    text-align: center;
+    padding: 0px;
+    font-weight: 500;
+    transition: all 0.5s;
+}
+
+.slider-nav .slider-btn:hover {
+    background-color: var(--dark-dark-active);
+    color: var(--white);
+}
+
+.primary-btn {
+    font-family: var(--main-font);
+    padding: 10px 32px;
+    font-size: 16px;
+    height: 45px;
+    line-height: normal;
+    color: var(--white);
+    background-color: var(--primary-normal);
+    border-radius: 32px;
+    border: 1px solid var(--primary-normal);
+}
+
+.primary-btn:hover {
+    background-color: var(--primary-normal-active);
+    color: var(--white);
+}
+
+.secondary-btn {
+    font-family: var(--main-font);
+    padding: 10px 32px;
+    font-size: 16px;
+    height: 45px;
+    line-height: normal;
+    color: var(--dark-normal);
+    border: 1px solid var(--dark-normal);
+    background-color: transparent;
+    border-radius: 32px;
+}
+
+.secondary-btn:hover {
+    background-color: var(--dark-dark);
+    color: var(--white);
+}
+.green-btn {
+    font-family: var(--main-font);
+    padding: 10px 32px;
+    font-size: 16px;
+    height: 45px;
+    line-height: normal;
+    color: var(--white);
+    background-color: var(--Secondary-normal);
+    border-radius: 32px;
+    border: 1px solid var(--Secondary-normal);
+}
+
+.green-btn:hover {
+    background-color: var(--Secondary-normal-active);
+    color: var(--white);
+}
+.form-label{
+    font-family: var(--main-font);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.form-control {
+    height: 45px;
+    width: 320px;
+    background-color: var(--normal);
+    border: 1px solid var(--dark-light);
+    border-radius: 32px;
+    font-size: 16px;
+    font-family: var(--main-font);
+}
+
+.form-control::placeholder {
+    color: var(--dark-light);
+}
+
+/* item-price-bar */
+.item-price-bar {
+    background-color: var(--Secondary-normal);
+    color: var(--white);
+    padding: 18px 0px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.item-price-bar .bottom-bar .item-count {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.item-price-bar .bottom-bar .item-count .saved-amt {
+    font-size: 13px;
+    padding: 2px 10px;
+    color: var(--Secondary-normal);
+    background-color: var(--white);
+    border-radius: 32px;
+}
+
+.item-price-bar .bottom-bar .price-btn {
+    padding: 12px 32px;
+    background-color: var(--white);
+    color: var(--dark-dark);
+    border-radius: 32px;
+    width: 320px;
+    transition: all 0.5s;
+}
+
+.owl-carousel .owl-nav.disabled{
+    display: block !important;
+    position: absolute;
+    right: 0;
+    top: -62px;
+}
+.owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next{
+    background-color: var(--white);
+    color: var(--dark-dark);
+    padding: 5px 10px !important;
+    font-size: 32px;
+    border: 1px solid;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 32px;
+    margin-left: 6px;
+    transition: all 0.5s;
+}
+.owl-carousel .owl-nav button.owl-prev:hover, .owl-carousel .owl-nav button.owl-next:hover{
+    background-color: var(--dark-dark);
+    color: var(--white);
+}
+.owl-carousel .owl-nav button.owl-prev span, .owl-carousel .owl-nav button.owl-next span{
+    position: relative;
+    bottom: 4px;
+}
+
+
+/* Navbar */
+
+.navbar {
+    border-bottom: 1px solid var(--primary-light-hover);
+    justify-content: center;
+    font-family: var(--main-font);
+}
+.navbar .navbar-brand {
+    border-right: 1px solid var(--primary-light-hover);
+}
+.nav-menu{
+    background-color: var(--primary-normal);
+    border: none;
+}
+.nav-menu .navbar-nav .nav-item .nav-link{
+    color: var(--white);
+}
+/* 
+
+
+.navbar .navbar-tab .get-location {
+    color: var(--dark-normal);
+}
+
+.navbar .navbar-tab .get-location .user-location {
+    color: var(--dark-dark);
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    font-family: var(--main-font);
+}
+
+.navbar .navbar-tab .navbar-search {
+    width: 720px !important;
+    background-color: var(--primary-light);
+    border-color: var(--primary-light-active);
+}
+
+.navbar-menu {
+    background-color: var(--primary-normal);
+    border: 0px;
+    padding: 12px 100px;
+    color: var(--white);
+}
+
+.navbar-menu .navbar-links {
+    color: var(--white);
+} */
+
+/* medicine category */
+.medicine-category .row .med-card-link {
+    width: fit-content;
+    transition: all 0.5s;
+}
+
+.medicine-category .row .med-card-link .med-card-img {
+    transition: all 0.5s;
+    border-radius: 14px;
+}
+
+.medicine-category .row .med-card-link:hover .med-card-img {
+    box-shadow: var(--shadow);
+    border-radius: 14px;
+}
+
+.medicine-category .row .med-card-link .med-card {
+    width: fit-content;
+}
+
+/* Trending Near You */
+.treandingMed-slider .treandingMed-carousel .medicine-card {
+    background-color: var(--white);
+    border: 2px solid var(--light-active);
+    border-radius: 14px;
+    width: 250px;
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    vertical-align: middle;
+    color: var(--dark-dark);
+}
+
+.treandingMed-slider .treandingMed-carousel .medicine-card .medicine-img {
+    max-width: 145px;
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+.treandingMed-slider .treandingMed-carousel .medicine-card .card-content .product-price .discount {
+    color: var(--Secondary-normal);
+}
+
+.add-btn {
+    color: var(--primary-normal);
+    background-color: var(--white);
+    padding: 0px 18px;
+    height: 24px;
+    font-weight: 500;
+    border: 1px solid var(--primary-normal);
+    border-radius: 32px;
+    transition: all 0.5s;
+}
+
+.add-btn:hover {
+    background-color: var(--primary-normal);
+    color: var(--white);
+}
+
+.add-btn {
+    color: var(--primary-normal);
+    background-color: var(--white);
+    padding: 0px 18px;
+    height: 24px;
+    font-weight: 500;
+    border: 1px solid var(--primary-normal);
+    border-radius: 32px;
+    transition: all 0.5s;
+}
+
+.add-btn:hover {
+    background-color: var(--primary-normal);
+    color: var(--white);
+}
+.add-btn-active {
+    font-family: var(--main-font);
+    padding: 0px 18px;
+    height: 24px;
+    font-weight: 500;
+    border: 1px solid var(--primary-normal);
+    border-radius: 32px;
+    transition: all 0.5s;
+    background-color: var(--primary-normal);
+    color: var(--white);
+}
+
+/* article-slider */
+.article-slider .article-carousel .item .blog-card {
+    padding: 16px;
+    width: 100%;
+    border-radius: 14px;
+    background-color: var(--white);
+    border: 1px solid var(--primary-light-active);
+    color: var(--dark-dark);
+}
+
+.article-slider .article-carousel .item .blog-card .category-tag {
+    color: var(--Secondary-normal);
+    background-color: var(--Secondary-light-hover);
+    padding: 2px 16px;
+    border-radius: 32px;
+    width: fit-content;
+}
+.article-carousel .owl-nav{
+    display: none !important;
+}
+.offer-carousel .owl-nav.disabled{
+    display: none !important;
+}
+/* why-choose */
+.why-choose {
+    padding: 32px;
+    background-color: var(--primary-light-hover);
+    border-radius: 14px;
+
+}
+
+.why-choose .why-choose-card {
+    padding: 24px;
+    background-color: var(--white);
+    border: 1px solid var(--primary-light-active);
+    border-radius: 14px;
+}
+
+/* review-section */
+
+.review-section .review-carousel .item .review-card {
+    padding: 16px;
+    border: 1px solid var(--primary-light-hover);
+    background-color: var(--white);
+    color: var(--dark-dark);
+    border-radius: 14px;
+}
+
+/* Footer */
+.main-footer {
+    background-color: var(--dark-dark);
+    color: var(--white);
+    padding: 64px 0px;
+}
+
+.main-footer .footer-subscibe {
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--dark-normal-hover);
+}
+
+.main-footer .footer-links {
+    padding: 32px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    border-bottom: 1px solid var(--dark-normal-hover);
+}
+
+.main-footer .footer-links .footer-item .footer-link {
+    color: var(--dark-light);
+    padding: 8px 0px;
+    transition: all 0.5s;
+}
+
+.main-footer .footer-links .footer-item .footer-link:hover {
+    color: var(--white);
+}
+
+.main-footer .footer-copyright {
+    padding-top: 32px;
+    color: var(--dark-light);
+}
+
+/* Search Result Page */
+.section-title .sortBy #searchSort {
+    font-family: var(--main-font);
+    color: var(--dark-normal);
+    background-color: var(--dark);
+    border: 1px solid var(--dark-light);
+    border-radius: 7px;
+    padding: 6px 12px;
+}
+
+
+.medicine-card {
+    background-color: var(--white);
+    border: 2px solid var(--light-active);
+    border-radius: 14px;
+    width: 100%;
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    vertical-align: middle;
+    color: var(--dark-dark);
+}
+
+.medicine-card .medicine-img {
+    max-width: 145px;
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+.medicine-card .card-content .product-price .discount {
+    color: var(--Secondary-normal);
+}
+
+.medicine-card .card-content .add-btn {
+    color: var(--primary-normal);
+    background-color: var(--white);
+    padding: 0px 18px;
+    height: 24px;
+    font-weight: 500;
+    border: 1px solid var(--primary-normal);
+    border-radius: 32px;
+    transition: all 0.5s;
+}
+
+.medicine-card .card-content .add-btn:hover {
+    background-color: var(--primary-normal);
+    color: var(--white);
+}
+
+/* product page  */
+.product-img-side {
+    border-right: 1px solid var(--primary-light-hover);
+}
+
+.product-details {
+    font-family: var(--main-font);
+}
+
+.carousel-indicators button.thumbnail {
+    width: 100px;
+}
+
+.carousel-indicators button.thumbnail:not(.active) {
+    opacity: 0.7;
+}
+
+.carousel-indicators {
+    position: static;
+}
+
+@media screen and (min-width: 992px) {
+    .carousel {
+        max-width: 70%;
+        margin: 0 auto;
+    }
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--primary-light) !important;
+}
+
+/* Check delievry */
+.delivery-section .expected-delievry{
+    padding: 8px 16px;
+    width: fit-content;
+    border: 1px solid var(--Secondary-normal);
+    border-radius: 32px;
+    background-color: var(--secondary-light);
+    color: var(--dark-dark);
+}
+.delivery-section , .price-section ,.product-discription{
+    border-bottom: 1px solid var(--primary-light-hover);
+}
+.check-pincode .input-group .input-group-text {
+    background-color: var(--white);
+    border-radius: 32px;
+    border: 1px solid var(--dark-light-hover);
+    border-right: 0px;
+}
+.check-pincode .input-group{
+    position: relative;
+    width: 100%;
+}
+.check-pincode .input-group .form-control{
+    border-top-right-radius: 24px !important;
+    border-bottom-right-radius: 24px !important;
+}
+
+.check-pincode .input-group .delivery-btn{
+    position: absolute;
+    background-color: var(--dark-dark);
+    color: var(--white);
+    border-top-left-radius: 32px !important;
+    border-bottom-left-radius: 32px !important;
+    border-radius: 32px;
+    padding: 6px 24px;
+    right: 6px;
+    top: 6px;
+    z-index: 2;
+}
+
+.price-section .product-price .price{
+    font-size: 31px;
+    font-weight: bold;
+    color: var(--primary-normal);
+}
+
+.offer-slider{
+    padding: 12px;
+    background-color: var(--dark);
+    border: 1px solid var(--dark-light);
+    border-radius: 14px;
+}
+
+.ups-section{
+    background-color: var(--secondary-light);
+    padding: 16px;
+    border-radius: 14px;
+}
+
+.breadcrumbs .breadcrumbs-link{
+    color: var(--dark-dark);
+}
+.breadcrumbs .breadcrumbs-active-link{
+    color: var(--dark-normal);
+}
+
+/* View cart */
+
+.coupons .coupons-btn{
+    width: 100%;
+    padding: 12px;
+    border-radius: 7px;
+    color: var(--Secondary-darker);
+    background-color: var(--secondary-light);
+    border: 1px solid var(--Secondary-light-active);
+    font-family: var(--main-font);
+    font-size: 20px;
+    text-align: left;
+}
+.payment-opt-btn{
+    width: 100%;
+    padding: 12px;
+    border-radius: 7px;
+    color: var(--Secondary-darker);
+    background-color: var(--white);
+    border: 1px solid var(--primary-light-hover);
+    font-family: var(--main-font);
+    font-size: 20px;
+    text-align: left;
+}
+
+
+.price-breakup h6{
+    border-bottom: 1px solid var(--primary-light-hover);
+}
+.price-breakup .prices{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--dark-normal);
+    font-weight: 500;
+    padding: 4px 12px;
+}
+.price-breakup .prices .discounted-amount{
+    color: var(--Secondary-normal);
+}
+.price-breakup .grand-total{
+    padding: 16px 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(/images/wave.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: var(--primary-light);
+    margin-top: 8px;
+    border-radius: 0px 0px 14px 14px;
+}
+
+.offcanvas .offcanvas-header .sidebar-close-btn{
+    font-size: 24px;
+    background-color: transparent;
+    border: none;
+}
+.offcanvas .offcanvas-header .offcanvas-title{
+    font-size: 20px;
+}
+
+/* Order Review Section */
+.delievry-details-view{
+    background-color: var(--white);
+    border: 1px solid var(--dark-light);
+    padding: 12px;
+    border-radius: 14px;
+    font-family: var(--main-font);
+    margin-bottom: 24px;
+}
+.delievry-details-view .location-pincode{
+    background-color: var(--primary-light-hover);
+    border: 1px solid var(--primary-light-active);
+    color: var(--dark-dark);
+    padding: 6px 12px;
+    border-radius: 32px;
+}
+
+.delievry-details-view .edit-address{
+    color: var(--primary-normal);
+}
+.delievry-details-view .delievry-time{
+    background-color: var(--secondary-light);
+    border: 1px solid var(--Secondary-normal);
+    width: fit-content;
+    padding: 6px 16px;
+    border-radius: 32px;
+}
+
+/* Apply coupon btn */
+.apply-coupon{
+    padding: 12px;
+    height: 70px;
+    background-color: var(--dark);
+    border-radius: 14px;
+}
+.apply-coupon .input-group .input-group-text {
+    background-color: var(--white);
+    border-radius: 32px;
+    border: 1px solid var(--dark-light-hover);
+    border-right: 0px;
+}
+.apply-coupon .input-group{
+    position: relative;
+    width: 320px;
+}
+
+.apply-coupon .input-group .delivery-btn{
+    position: absolute;
+    background-color: var(--dark-dark);
+    color: var(--white);
+    border-top-left-radius: 32px !important;
+    border-bottom-left-radius: 32px !important;
+    border-radius: 32px;
+    padding: 6px 24px;
+    right: 6px;
+    top: 6px;
+    z-index: 2;
+}
+
+/* Coupons */
+.coupons-card{
+    padding: 12px;
+    border: 1px solid var(--dark-light);
+    border-radius: 14px;
+}
+.coupons-card .coupon-description{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.coupons-card .terms{
+    color: var(--primary-normal);
+    margin: 0;
+    margin-top: 6px;
+}
+
+/* Payment option sidebar */
+.payment-choice{
+    padding: 12px;
+    border-radius: 14px;
+    border:1px solid var(--primary-light-hover)
+}
+.payment-choice .form-check{
+    margin-bottom: 16px;
+    padding: 12px;
+}
+.payment-choice .form-check .form-check-input{
+    margin-left: 0px;
+    margin-right: 12px;
+    font-size: 20px;
+    font-weight: 300;
+    border-radius: 32px;
+}
+.payment-choice .form-check .form-check-label{
+    color: var(--dark-dark);
+    font-size: 20px;
+    font-weight: 500;
+    font-family: var(--main-font);
+}
+.selected{
+    border:2px solid var(--primary-normal);
+}
+.payment-choice .opt-checked{
+    background-color: var(--primary-light);
+    border-radius: 7px;
+}
+.recommended{
+    background-color: #FFCC00;
+    color: var(--dark-dark);
+    font-weight: 500;
+    font-size: 13px;
+    font-style: italic;
+    padding: 3px 16px;
+    border-radius: 32px;
+    line-height: 0px;
+}

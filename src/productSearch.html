@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search result page | Heart Beat Med</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="/src/css/responsive.css">
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <custom-header></custom-header>
+    <!-- Navigation bar ends -->
+
+
+    <!-- price & item count bottom bar -->
+    <div class="cintainer-fluid item-price-bar">
+        <div class="container">
+            <div class="bottom-bar d-flex justify-content-between align-items-center">
+                <h5 class="item-count m-0"><span class="selected-items me-2">3</span> Items in Cart <span
+                        class="saved-amt ms-2">Saved ₹106</span></h5>
+                <a href="#" class="price-btn d-flex justify-content-between align-items-center">
+                    <div>
+                        <p class="m-0 small">Total</p>
+                        <h6 class="m-0 fw-bold">₹603.00</h6>
+                    </div>
+                    <h6 class="m-0">View Cart <i class="bi bi-chevron-right"></i></h6>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="container wrapper">
+        <div class="section-title pb-3 d-flex justify-content-between align-item-center">
+            <h5 class="fw-semibold m-0">Showing results for <span style="color: #0075b8;">"Shelcal"</span></h5>
+            <div class="sortBy d-flex justify-content-between align-items-center">
+                <p class="m-0 me-2"><img class="me-1" src="/images/sort-by-icon.svg" alt="sortby">Sort By</p>
+                <select name="searchSort" id="searchSort">
+                    <option value="relevance">Relevance</option>
+                    <option value="lowTohigh">Low to High</option>
+                    <option value="highTolow">High to Low</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="result-card">
+            <div class="row d-flex justify-content-between flex-wrap">
+                <a href="#" style="width: fit-content !important; margin-bottom: 24px;">
+                    <div class="medicine-card card" style="width: 100%;">
+                        <img src="/images/medicine.png" class="medicine-img img-fluid text-center" alt="">
+                        <div class="card-content">
+                            <p class="fw-semibold m-0 mb-1">Shelcal 500mg Strip Of 15 Tablets</p>
+                            <p class="small m-0 mb-1 text-body-tertiary">MRP <strike>₹144.30</strike></p>
+                            <div class="d-flex justify-content-between align-item-center">
+                                <p class="fw-bold product-price m-0">₹132.76 <span class="discount">(8%)</span></p>
+                                <button class="add-btn small">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" style="width: fit-content !important; margin-bottom: 24px;">
+                    <div class="medicine-card card" style="width: 100%;">
+                        <img src="/images/medicine.png" class="medicine-img img-fluid text-center" alt="">
+                        <div class="card-content">
+                            <p class="fw-semibold m-0 mb-1">Shelcal 500mg Strip Of 15 Tablets</p>
+                            <p class="small m-0 mb-1 text-body-tertiary">MRP <strike>₹144.30</strike></p>
+                            <div class="d-flex justify-content-between align-item-center">
+                                <p class="fw-bold product-price m-0">₹132.76 <span class="discount">(8%)</span></p>
+                                <button class="add-btn small">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" style="width: fit-content !important; margin-bottom: 24px;">
+                    <div class="medicine-card card" style="width: 100%;">
+                        <img src="/images/medicine.png" class="medicine-img img-fluid text-center" alt="">
+                        <div class="card-content">
+                            <p class="fw-semibold m-0 mb-1">Shelcal 500mg Strip Of 15 Tablets</p>
+                            <p class="small m-0 mb-1 text-body-tertiary">MRP <strike>₹144.30</strike></p>
+                            <div class="d-flex justify-content-between align-item-center">
+                                <p class="fw-bold product-price m-0">₹132.76 <span class="discount">(8%)</span></p>
+                                <button class="add-btn small">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" style="width: fit-content !important; margin-bottom: 24px;">
+                    <div class="medicine-card card" style="width: 100%;">
+                        <img src="/images/medicine.png" class="medicine-img img-fluid text-center" alt="">
+                        <div class="card-content">
+                            <p class="fw-semibold m-0 mb-1">Shelcal 500mg Strip Of 15 Tablets</p>
+                            <p class="small m-0 mb-1 text-body-tertiary">MRP <strike>₹144.30</strike></p>
+                            <div class="d-flex justify-content-between align-item-center">
+                                <p class="fw-bold product-price m-0">₹132.76 <span class="discount">(8%)</span></p>
+                                <button class="add-btn small">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" style="width: fit-content !important; margin-bottom: 24px;">
+                    <div class="medicine-card card" style="width: 100%;">
+                        <img src="/images/medicine.png" class="medicine-img img-fluid text-center" alt="">
+                        <div class="card-content">
+                            <p class="fw-semibold m-0 mb-1">Shelcal 500mg Strip Of 15 Tablets</p>
+                            <p class="small m-0 mb-1 text-body-tertiary">MRP <strike>₹144.30</strike></p>
+                            <div class="d-flex justify-content-between align-item-center">
+                                <p class="fw-bold product-price m-0">₹132.76 <span class="discount">(8%)</span></p>
+                                <button class="add-btn small">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" style="width: fit-content !important; margin-bottom: 24px;">
+                    <div class="medicine-card card" style="width: 100%;">
+                        <img src="/images/medicine.png" class="medicine-img img-fluid text-center" alt="">
+                        <div class="card-content">
+                            <p class="fw-semibold m-0 mb-1">Shelcal 500mg Strip Of 15 Tablets</p>
+                            <p class="small m-0 mb-1 text-body-tertiary">MRP <strike>₹144.30</strike></p>
+                            <div class="d-flex justify-content-between align-item-center">
+                                <p class="fw-bold product-price m-0">₹132.76 <span class="discount">(8%)</span></p>
+                                <button class="add-btn small">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" style="width: fit-content !important; margin-bottom: 24px;">
+                    <div class="medicine-card card" style="width: 100%;">
+                        <img src="/images/medicine.png" class="medicine-img img-fluid text-center" alt="">
+                        <div class="card-content">
+                            <p class="fw-semibold m-0 mb-1">Shelcal 500mg Strip Of 15 Tablets</p>
+                            <p class="small m-0 mb-1 text-body-tertiary">MRP <strike>₹144.30</strike></p>
+                            <div class="d-flex justify-content-between align-item-center">
+                                <p class="fw-bold product-price m-0">₹132.76 <span class="discount">(8%)</span></p>
+                                <button class="add-btn small">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" style="width: fit-content !important; margin-bottom: 24px;">
+                    <div class="medicine-card card" style="width: 100%;">
+                        <img src="/images/medicine.png" class="medicine-img img-fluid text-center" alt="">
+                        <div class="card-content">
+                            <p class="fw-semibold m-0 mb-1">Shelcal 500mg Strip Of 15 Tablets</p>
+                            <p class="small m-0 mb-1 text-body-tertiary">MRP <strike>₹144.30</strike></p>
+                            <div class="d-flex justify-content-between align-item-center">
+                                <p class="fw-bold product-price m-0">₹132.76 <span class="discount">(8%)</span></p>
+                                <button class="add-btn small">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" style="width: fit-content !important; margin-bottom: 24px;">
+                    <div class="medicine-card card" style="width: 100%;">
+                        <img src="/images/medicine.png" class="medicine-img img-fluid text-center" alt="">
+                        <div class="card-content">
+                            <p class="fw-semibold m-0 mb-1">Shelcal 500mg Strip Of 15 Tablets</p>
+                            <p class="small m-0 mb-1 text-body-tertiary">MRP <strike>₹144.30</strike></p>
+                            <div class="d-flex justify-content-between align-item-center">
+                                <p class="fw-bold product-price m-0">₹132.76 <span class="discount">(8%)</span></p>
+                                <button class="add-btn small">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" style="width: fit-content !important; margin-bottom: 24px;">
+                    <div class="medicine-card card" style="width: 100%;">
+                        <img src="/images/medicine.png" class="medicine-img img-fluid text-center" alt="">
+                        <div class="card-content">
+                            <p class="fw-semibold m-0 mb-1">Shelcal 500mg Strip Of 15 Tablets</p>
+                            <p class="small m-0 mb-1 text-body-tertiary">MRP <strike>₹144.30</strike></p>
+                            <div class="d-flex justify-content-between align-item-center">
+                                <p class="fw-bold product-price m-0">₹132.76 <span class="discount">(8%)</span></p>
+                                <button class="add-btn small">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" style="width: fit-content !important; margin-bottom: 24px;">
+                    <div class="medicine-card card" style="width: 100%;">
+                        <img src="/images/medicine.png" class="medicine-img img-fluid text-center" alt="">
+                        <div class="card-content">
+                            <p class="fw-semibold m-0 mb-1">Shelcal 500mg Strip Of 15 Tablets</p>
+                            <p class="small m-0 mb-1 text-body-tertiary">MRP <strike>₹144.30</strike></p>
+                            <div class="d-flex justify-content-between align-item-center">
+                                <p class="fw-bold product-price m-0">₹132.76 <span class="discount">(8%)</span></p>
+                                <button class="add-btn small">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" style="width: fit-content !important; margin-bottom: 24px;">
+                    <div class="medicine-card card" style="width: 100%;">
+                        <img src="/images/medicine.png" class="medicine-img img-fluid text-center" alt="">
+                        <div class="card-content">
+                            <p class="fw-semibold m-0 mb-1">Shelcal 500mg Strip Of 15 Tablets</p>
+                            <p class="small m-0 mb-1 text-body-tertiary">MRP <strike>₹144.30</strike></p>
+                            <div class="d-flex justify-content-between align-item-center">
+                                <p class="fw-bold product-price m-0">₹132.76 <span class="discount">(8%)</span></p>
+                                <button class="add-btn small">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <custom-footer></custom-footer>
+
+
+    <!-- Owl carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
+        integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Custom Script -->
+    <script src="/src/js/main.js"></script>
+    <script src="/src/js/header.js"></script>
+    <script src="/src/js/footer.js"></script>
+    <!-- bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
