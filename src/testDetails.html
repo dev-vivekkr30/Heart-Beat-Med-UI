@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Details | Heart Beat Med</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="/src/css/responsive.css">
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <custom-header></custom-header>
+    <!-- Mobile Menu -->
+    <nav class="mobile-menu">
+        <div class="top-nav d-flex justify-content-between align-item-center" style="padding: 12px 16px;">
+            <a href="#"><img src="/images/logo.png" style="max-width: 120px;" alt=""></a>
+            <div class="side-menu">
+                <button class="side-menu-btn menu-sidebar" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#mobile-menu-nav-items" aria-controls="mobile-menu-nav-items"><i
+                        class="bi bi-list"></i></button>
+                <button class="side-menu-btn shop-cart"><i class="bi bi-cart"></i></button>
+            </div>
+        </div>
+        <div class="bottom-nav">
+            <div class="nav-location-profile d-flex justify-content-between align-item-center">
+                <div class="nav-location">
+                    <div class="get-location mb-2 d-flex justify-content-start align-item-center"
+                        style="width: max-content;">
+                        <p class="m-0" style="color: #fff;"><i class="bi bi-geo-alt"></i> Fast Delivery to </p>
+                        <div class="dropdown">
+                            <button data-bs-toggle="dropdown" aria-expanded="false"
+                                class="fw-bold text-white user-location m-0 border-0 bg-transparent">New
+                                Delhi <i class="bi bi-chevron-down"></i></button>
+                            <div class="dropdown-menu p-3" style="width: 320px !important;">
+                                <p class="small fw-semibold mb-3">Choose your location</p>
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" placeholder="Enter Your Pincode"
+                                        aria-label="Example text with button addon" aria-describedby="button-addon1">
+                                    <button class="btn primary-btn small ps-3 pe-3" type="button"
+                                        id="button-addon1">Check</button>
+                                </div>
+                                <a href="#" class="fw-semibold" style="color: #0075b8;"><i class="bi bi-crosshair"></i>
+                                    Detect current location</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="mob-profile-btn"><i class="bi bi-person"></i></button>
+            </div>
+            <div>
+                <form class="d-flex dropdown" role="search">
+                    <input class="search-bar form-control dropdown-toggle w-100" type="search" placeholder="Search"
+                        aria-label="Search" data-bs-toggle="dropdown" aria-expanded="false">
+                    <ul class="dropdown-menu w-100 mt-2">
+                        <li><a class="dropdown-item" href="#">Med 1</a></li>
+                        <li><a class="dropdown-item" href="#">Med 2</a></li>
+                        <li><a class="dropdown-item" href="#">Med-3</a></li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="mobile-menu-nav-items"
+        aria-labelledby="mobile-menu-nav-items-Label">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="mobile-menu-nav-items-Label">Offcanvas</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div>
+                Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images,
+                lists, etc.
+            </div>
+            <div class="dropdown mt-3">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                    Dropdown button
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Navigation bar ends -->
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-9">
+                <div class="breadcrumbs mt-4 d-flex justify-content-start align-items-center mb-2">
+                    <a class="breadcrumbs-link small" href="#">Home</a>
+                    <i class="bi bi-chevron-right"></i>
+                    <a class="breadcrumbs-link small" href="#">Lab Test</a>
+                    <i class="bi bi-chevron-right small"></i>
+                    <a class="breadcrumbs-link breadcrumbs-active-link small" href="#">Complete Blood Count (CBC) in
+                        West
+                        Delhi</a>
+                </div>
+
+                <!-- test title -->
+                <h5 class="fw-bold">Complete Blood Count (CBC) in West Delhi</h5>
+                <!-- Rating -->
+                <div class="rating d-flex justify-content-start align-items-center mb-3">
+                    <div class="rating d-flex justify-content-start align-item-center">
+                        <img class="me-2" style="max-width: 18px;" src="/images/star.svg" alt="">
+                        <img class="me-2" style="max-width: 18px;" src="/images/star.svg" alt="">
+                        <img class="me-2" style="max-width: 18px;" src="/images/star.svg" alt="">
+                        <img class="me-2" style="max-width: 18px;" src="/images/star.svg" alt="">
+                        <img class="me-2" style="max-width: 18px;" src="/images/star.svg" alt="">
+                    </div>
+                    <div class="small text-body-tertiary">(507 Ratings)</div>
+                </div>
+
+                <!-- test mirco details -->
+                <div class="micro-details pt-2 pb-2">
+                    <p class="text-body-tertiary m-0">Also Known as Complete Blood Picture, Complete Blood Profile, CBP,
+                        CBC, Blood-Test, complete blood count, cbc, Full body count, Full blood examination, Full blood
+                        cell
+                        count, FBC, FBE, TC, TLC, DC, CBC + Differential, Platelet count, CBC with Differential</p>
+                    <div class="pointers mt-3 d-flex justify-content-between">
+                        <div class="border-end w-100">
+                            <p class="fw-bold m-0 mb-2">Next Slot:</p>
+                            <p class="m-0">09:00 AM, Today</p>
+                        </div>
+                        <div class="border-end w-100 ms-4">
+                            <p class="fw-bold m-0 mb-2">Prescription Required:</p>
+                            <p class="m-0">Yes</p>
+                        </div>
+                        <div class="w-100 ms-4">
+                            <p class="fw-bold m-0 mb-2">Home Sample Collection</p>
+                            <p class="m-0">Yes</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- lab--card -->
+                <div class="lab-cards mt-3">
+                    <div class="section-title pb-3 d-flex justify-content-between align-item-center">
+                        <p class="fw-semibold m-0">Provided by 26 Labs</p>
+                    </div>
+                    <div class="lab-card-carousel owl-carousel owl-carousel">
+                        <div class="item">
+                            <a href="#">
+                                <div class="card">
+                                    <p class="fw-semibold m-0 mb-2">Lok Clinic & Hospital</p>
+                                    <div class="lab-details mb-2 d-flex justify-content-start align-items-center">
+                                        <p class="rating d-block m-0 me-1">4.5</p>
+                                        <img class="me-2" style="max-width: 14px;" src="/images/star.svg" alt="">
+                                        <p class="lab-distance small m-0">2.5km away</p>
+                                    </div>
+                                    <p class="small m-0 mb-1 text-body-tertiary">MRP <strike>₹144.30</strike></p>
+                                    <div class="d-flex justify-content-between align-item-center">
+                                        <p class="fw-bold product-price m-0">₹132.76 <span class="discount"
+                                                style="color: #26A84D;">(8%)</span></p>
+                                        <button class="add-btn small">Add</button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <div class="card">
+                                    <p class="fw-semibold m-0 mb-2">Lok Clinic & Hospital</p>
+                                    <div class="lab-details mb-2 d-flex justify-content-start align-items-center">
+                                        <p class="rating d-block m-0 me-1">4.5</p>
+                                        <img class="me-2" style="max-width: 14px;" src="/images/star.svg" alt="">
+                                        <p class="lab-distance small m-0">2.5km away</p>
+                                    </div>
+                                    <p class="small m-0 mb-1 text-body-tertiary">MRP <strike>₹144.30</strike></p>
+                                    <div class="d-flex justify-content-between align-item-center">
+                                        <p class="fw-bold product-price m-0">₹132.76 <span class="discount"
+                                                style="color: #26A84D;">(8%)</span></p>
+                                        <button class="add-btn small">Add</button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <div class="card">
+                                    <p class="fw-semibold m-0 mb-2">Lok Clinic & Hospital</p>
+                                    <div class="lab-details mb-2 d-flex justify-content-start align-items-center">
+                                        <p class="rating d-block m-0 me-1">4.5</p>
+                                        <img class="me-2" style="max-width: 14px;" src="/images/star.svg" alt="">
+                                        <p class="lab-distance small m-0">2.5km away</p>
+                                    </div>
+                                    <p class="small m-0 mb-1 text-body-tertiary">MRP <strike>₹144.30</strike></p>
+                                    <div class="d-flex justify-content-between align-item-center">
+                                        <p class="fw-bold product-price m-0">₹132.76 <span class="discount"
+                                                style="color: #26A84D;">(8%)</span></p>
+                                        <button class="add-btn small">Add</button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="#">
+                                <div class="card">
+                                    <p class="fw-semibold m-0 mb-2">Lok Clinic & Hospital</p>
+                                    <div class="lab-details mb-2 d-flex justify-content-start align-items-center">
+                                        <p class="rating d-block m-0 me-1">4.5</p>
+                                        <img class="me-2" style="max-width: 14px;" src="/images/star.svg" alt="">
+                                        <p class="lab-distance small m-0">2.5km away</p>
+                                    </div>
+                                    <p class="small m-0 mb-1 text-body-tertiary">MRP <strike>₹144.30</strike></p>
+                                    <div class="d-flex justify-content-between align-item-center">
+                                        <p class="fw-bold product-price m-0">₹132.76 <span class="discount"
+                                                style="color: #26A84D;">(8%)</span></p>
+                                        <button class="add-btn small">Add</button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="price-section mt-2 d-flex justify-content-between align-items-center">
+                    <div class="product-price">
+                        <div class="price">₹132.76 <span
+                                style="color: #546881; font-size: 25px; font-weight: 500;">(8%)</span><span
+                                style="color: #A3ADBB; font-size: 16px; font-weight: normal;">
+                                MRP <strike>₹144.30</strike></span></div>
+                        <p class="small text-body-tertiary">Inclusive of all taxes</p>
+                    </div>
+                    <button class="primary-btn">Add to cart</button>
+                </div>
+            </div>
+            <div class="col-md-3 mt-4">
+                <a href="#"><img class="mb-3 img-fluid" src="/images/lab-test-side-ad-banner.png"
+                        alt=""></a>
+                <img style="max-width: 100%;" src="/images/ups.png" alt="">
+            </div>
+        </div>
+
+        <div class="test-details mt-4">
+            <h5 class="fw-bold">Test(s) Included (29)</h5>
+            <p class="fw-semibold m-0 mb-1">COMPLETE BLOOD COUNT (CBC) <span
+                    class="small text-body-tertiary">29 Tests Included</span></p>
+            <p class="text-dark">Helps to build strong bones and dental health. Promotes joint ease and comfort in
+                arthritis. Promotes
+                formation of bones & delays resorption. Supports the body’s bone repair and healing processes. Improves
+                the immune system and inflammatory response. Maintains healthy levels of Vitamin D and minerals. It is
+                useful for bones and teeth from oxidative damages. Helps to relieve pain and discomfort in arthritis</p>
+            <p class="fw-semibold m-0 mb-1">About</p>
+            <div class="pointers mt-2 mb-2 d-flex justify-content-between">
+                <div class="border-end w-100">
+                    <p class="fw-bold m-0 mb-2">Sample</p>
+                    <p class="m-0">BLOOD</p>
+                </div>
+                <div class="border-end w-100 ms-4">
+                    <p class="fw-bold m-0 mb-2">Gender</p>
+                    <p class="m-0">Both</p>
+                </div>
+                <div class="w-100 ms-4">
+                    <p class="fw-bold m-0 mb-2">Report Delivery</p>
+                    <p class="m-0">Reports in 10 hours</p>
+                </div>
+            </div>
+
+            <p class="text-dark">Around 67% of young kids in India are born with one of the most common blood disorders,
+                anaemia. The
+                incidence of the condition is consistently rising across India with each passing year. Anemia causes a
+                person to lose a significant volume of healthy red blood cells. It can either happen temporarily or
+                permanently and may be mild or severe.</p>
+        </div>
+        <div class="frequently-booked-tests lab-cards wrapper">
+            <div class="section-title pb-3 d-flex justify-content-between align-item-center">
+                <h5 class="fw-semibold m-0">Frequently Booked Together</h5>
+            </div>
+            <div class="lab-card-carousel owl-carousel owl-carousel">
+                <div class="item">
+                    <a href="#">
+                        <div class="card">
+                            <p class="fw-semibold m-0 mb-2">Rheumatoid Factor (RA) Quantitative <span
+                                    class="text-body-tertiary small">(5 Test Included)</span></p>
+                            <div class="lab-details mb-2 d-flex justify-content-start align-items-center">
+                                <p class="fw-semibold small m-0 me-2">Lok Clinic & Hospital</p>
+                                <p class="rating d-block m-0 me-1">4.5</p>
+                                <img class="me-2" style="max-width: 14px;" src="/images/star.svg" alt="">
+                                <p class="lab-distance small m-0">2.5km away</p>
+                            </div>
+                            <p class="small m-0 mb-1 text-body-tertiary">MRP <strike>₹144.30</strike></p>
+                            <div class="d-flex justify-content-between align-item-center">
+                                <p class="fw-bold product-price m-0">₹132.76 <span class="discount"
+                                        style="color: #26A84D;">(8%)</span></p>
+                                <button class="add-btn small">Add</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#">
+                        <div class="card">
+                            <p class="fw-semibold m-0 mb-2">Rheumatoid Factor (RA) Quantitative <span
+                                    class="text-body-tertiary small">(5 Test Included)</span></p>
+                            <div class="lab-details mb-2 d-flex justify-content-start align-items-center">
+                                <p class="fw-semibold small m-0 me-2">Lok Clinic & Hospital</p>
+                                <p class="rating d-block m-0 me-1">4.5</p>
+                                <img class="me-2" style="max-width: 14px;" src="/images/star.svg" alt="">
+                                <p class="lab-distance small m-0">2.5km away</p>
+                            </div>
+                            <p class="small m-0 mb-1 text-body-tertiary">MRP <strike>₹144.30</strike></p>
+                            <div class="d-flex justify-content-between align-item-center">
+                                <p class="fw-bold product-price m-0">₹132.76 <span class="discount"
+                                        style="color: #26A84D;">(8%)</span></p>
+                                <button class="add-btn small">Add</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#">
+                        <div class="card">
+                            <p class="fw-semibold m-0 mb-2">Rheumatoid Factor (RA) Quantitative <span
+                                    class="text-body-tertiary small">(5 Test Included)</span></p>
+                            <div class="lab-details mb-2 d-flex justify-content-start align-items-center">
+                                <p class="fw-semibold small m-0 me-2">Lok Clinic & Hospital</p>
+                                <p class="rating d-block m-0 me-1">4.5</p>
+                                <img class="me-2" style="max-width: 14px;" src="/images/star.svg" alt="">
+                                <p class="lab-distance small m-0">2.5km away</p>
+                            </div>
+                            <p class="small m-0 mb-1 text-body-tertiary">MRP <strike>₹144.30</strike></p>
+                            <div class="d-flex justify-content-between align-item-center">
+                                <p class="fw-bold product-price m-0">₹132.76 <span class="discount"
+                                        style="color: #26A84D;">(8%)</span></p>
+                                <button class="add-btn small">Add</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#">
+                        <div class="card">
+                            <p class="fw-semibold m-0 mb-2">Rheumatoid Factor (RA) Quantitative <span
+                                    class="text-body-tertiary small">(5 Test Included)</span></p>
+                            <div class="lab-details mb-2 d-flex justify-content-start align-items-center">
+                                <p class="fw-semibold small m-0 me-2">Lok Clinic & Hospital</p>
+                                <p class="rating d-block m-0 me-1">4.5</p>
+                                <img class="me-2" style="max-width: 14px;" src="/images/star.svg" alt="">
+                                <p class="lab-distance small m-0">2.5km away</p>
+                            </div>
+                            <p class="small m-0 mb-1 text-body-tertiary">MRP <strike>₹144.30</strike></p>
+                            <div class="d-flex justify-content-between align-item-center">
+                                <p class="fw-bold product-price m-0">₹132.76 <span class="discount"
+                                        style="color: #26A84D;">(8%)</span></p>
+                                <button class="add-btn small">Add</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#">
+                        <div class="card">
+                            <p class="fw-semibold m-0 mb-2">Rheumatoid Factor (RA) Quantitative <span
+                                    class="text-body-tertiary small">(5 Test Included)</span></p>
+                            <div class="lab-details mb-2 d-flex justify-content-start align-items-center">
+                                <p class="fw-semibold small m-0 me-2">Lok Clinic & Hospital</p>
+                                <p class="rating d-block m-0 me-1">4.5</p>
+                                <img class="me-2" style="max-width: 14px;" src="/images/star.svg" alt="">
+                                <p class="lab-distance small m-0">2.5km away</p>
+                            </div>
+                            <p class="small m-0 mb-1 text-body-tertiary">MRP <strike>₹144.30</strike></p>
+                            <div class="d-flex justify-content-between align-item-center">
+                                <p class="fw-bold product-price m-0">₹132.76 <span class="discount"
+                                        style="color: #26A84D;">(8%)</span></p>
+                                <button class="add-btn small">Add</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ad banner home -->
+        <a class="mt-4 mb-4" href="#"><img class="img-fluid" src="/images/add-banner-home.jpg" alt=""></a>
+    </div>
+    <div class="faq-section">
+        <div class="container">
+            <div class="accordion m-auto" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                            aria-controls="panelsStayOpen-collapseOne">
+                            Accordion Item #1
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                        aria-labelledby="panelsStayOpen-headingOne">
+                        <div class="accordion-body">
+                            <strong>This is the first item's accordion body.</strong> It is shown by default, until the
+                            collapse plugin adds the appropriate classes that we use to style each element. These
+                            classes control the overall appearance, as well as the showing and hiding via CSS
+                            transitions. You can modify any of this with custom CSS or overriding our default variables.
+                            It's also worth noting that just about any HTML can go within the
+                            <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseTwo">
+                            Accordion Item #2
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingTwo">
+                        <div class="accordion-body">
+                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until
+                            the collapse plugin adds the appropriate classes that we use to style each element. These
+                            classes control the overall appearance, as well as the showing and hiding via CSS
+                            transitions. You can modify any of this with custom CSS or overriding our default variables.
+                            It's also worth noting that just about any HTML can go within the
+                            <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseThree">
+                            Accordion Item #3
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingThree">
+                        <div class="accordion-body">
+                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+                            collapse plugin adds the appropriate classes that we use to style each element. These
+                            classes control the overall appearance, as well as the showing and hiding via CSS
+                            transitions. You can modify any of this with custom CSS or overriding our default variables.
+                            It's also worth noting that just about any HTML can go within the
+                            <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <custom-footer></custom-footer>
+
+
+    <!-- Owl carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
+        integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Custom Script -->
+    <script src="/src/js/main.js"></script>
+    <script src="/src/js/header.js"></script>
+    <script src="/src/js/footer.js"></script>
+    <!-- bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Test | Heart Beat Med</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="/src/css/responsive.css">
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <custom-header></custom-header>
+    <!-- Mobile Menu -->
+     <nav class="mobile-menu">
+        <div class="top-nav d-flex justify-content-between align-item-center" style="padding: 12px 16px;">
+            <a href="#"><img src="/images/logo.png" style="max-width: 120px;" alt=""></a>
+            <div class="side-menu">
+                <button class="side-menu-btn menu-sidebar" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobile-menu-nav-items" aria-controls="mobile-menu-nav-items"><i class="bi bi-list"></i></button>
+                <button class="side-menu-btn shop-cart"><i class="bi bi-cart"></i></button>
+            </div>
+        </div>
+        <div class="bottom-nav">
+            <div class="nav-location-profile d-flex justify-content-between align-item-center">
+                <div class="nav-location">
+                    <div class="get-location mb-2 d-flex justify-content-start align-item-center" style="width: max-content;">
+                        <p class="m-0" style="color: #fff;"><i class="bi bi-geo-alt"></i> Fast Delivery to </p>
+                        <div class="dropdown">
+                            <button data-bs-toggle="dropdown" aria-expanded="false" class="fw-bold text-white user-location m-0 border-0 bg-transparent">New
+                                Delhi <i class="bi bi-chevron-down"></i></button>
+                            <div class="dropdown-menu p-3" style="width: 320px !important;">
+                                <p class="small fw-semibold mb-3">Choose your location</p>
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" placeholder="Enter Your Pincode" aria-label="Example text with button addon" aria-describedby="button-addon1">
+                                    <button class="btn primary-btn small ps-3 pe-3" type="button" id="button-addon1">Check</button>
+                                </div>
+                                <a href="#" class="fw-semibold" style="color: #0075b8;"><i class="bi bi-crosshair"></i> Detect current location</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="mob-profile-btn"><i class="bi bi-person"></i></button>
+            </div>
+            <div>
+                <form class="d-flex dropdown" role="search">
+                    <input class="search-bar form-control dropdown-toggle w-100" type="search" placeholder="Search" aria-label="Search" data-bs-toggle="dropdown" aria-expanded="false">
+                    <ul class="dropdown-menu w-100 mt-2">
+                        <li><a class="dropdown-item" href="#">Med 1</a></li>
+                        <li><a class="dropdown-item" href="#">Med 2</a></li>
+                        <li><a class="dropdown-item" href="#">Med-3</a></li>
+                      </ul>
+                </form>
+            </div>
+        </div>
+     </nav>
+     <div class="offcanvas offcanvas-start" tabindex="-1" id="mobile-menu-nav-items" aria-labelledby="mobile-menu-nav-items-Label">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="mobile-menu-nav-items-Label">Offcanvas</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+            Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+          </div>
+          <div class="dropdown mt-3">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+              Dropdown button
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    <!-- Navigation bar ends -->
+    <div class="container wrapper">
+        <!-- lab testing banners -->
+        <div class="lab-testing-cards">
+            <div class="section-title pb-3 d-flex justify-content-between align-item-center">
+                <h5 class="fw-semibold">Doctor Created Health Checks</h5>
+            </div>
+            <div class="row mb-4">
+                <div class="col-md-2"><a href="#"><img class="img-fluid" src="/images/Full Body Checkup.jpg" alt=""></a></div>
+                <div class="col-md-2"><a href="#"><img class="img-fluid" src="/images/Diabetes.jpg" alt=""></a></div>
+                <div class="col-md-2"><a href="#"><img class="img-fluid" src="/images/Women’s Health.jpg" alt=""></a></div>
+                <div class="col-md-2"><a href="#"><img class="img-fluid" src="/images/Thyroid.jpg" alt=""></a></div>
+                <div class="col-md-2"><a href="#"><img class="img-fluid" src="/images/Healthcare Package.jpg" alt=""></a></div>
+                <div class="col-md-2"><a href="#"><img class="img-fluid" src="/images/Fever.jpg" alt=""></a></div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"><a href="#"><img class="img-fluid" src="/images/Blood Studies.jpg" alt=""></a></div>
+                <div class="col-md-2"><a href="#"><img class="img-fluid" src="/images/Liver.jpg" alt=""></a></div>
+                <div class="col-md-2"><a href="#"><img class="img-fluid" src="/images/Hair Fall.jpg" alt=""></a></div>
+                <div class="col-md-2"><a href="#"><img class="img-fluid" src="/images/Kidney.jpg" alt=""></a></div>
+                <div class="col-md-2"><a href="#"><img class="img-fluid" src="/images/Hormone.jpg" alt=""></a></div>
+                <div class="col-md-2"><a href="#"><img class="img-fluid" src="/images/Heart.jpg" alt=""></a></div>
+            </div>
+        </div>
+
+        <!-- lab testing banner carousel -->
+        <div class="lab-testing-slider wrapper">
+            <div class="section-title pb-3 d-flex justify-content-between align-item-center">
+                <h5 class="fw-semibold">Lab Tests</h5>
+                
+            </div>
+            <div class="top-labTest-carousel owl-carousel owl-theme">
+                <div class="item"><a href="#"><img src="/images/lab-test-banner-1.png" alt=""></a></div>
+                <div class="item"><a href="#"><img src="/images/lab-test-banner-2.png" alt=""></a></div>
+            </div>
+        </div>
+        <!-- lab testing banner carousel ends -->
+
+        
+        <!-- Top Booked Tests -->
+        <div class="top-book-test wrapper">
+            <div class="section-title pb-3 d-flex justify-content-between align-item-center">
+                <h5 class="fw-semibold">Top Booked Tests</h5>
+            </div>
+            <div class="lab-test-carousel owl-carousel owl-theme">
+                <div class="item">
+                    <a href="#">
+                        <div class="lab-test-card card d-flex flex-row justify-content-between align-item-center w-100 test-card">
+                            <img src="/images/lab-test-icon.jpg" style="max-width: 100px;" alt="">
+                            <div class="card-content ms-3">
+                                <p class="fw-semibold m-0 mb-1">Rheumatoid Factor (RA) Quantitative <span class="small text-body-tertiary">(1 Test Included)</span></p>
+                                <p class="small m-0 mb-1 text-body-tertiary">MRP <strike>₹144.30</strike></p>
+                                <div class="d-flex justify-content-between align-item-center">
+                                    <p class="fw-bold product-price m-0">₹132.76 <span class="discount">(8%)</span></p>
+                                    <button class="add-btn small">Add</button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#">
+                        <div class="lab-test-card card d-flex flex-row justify-content-between align-item-center w-100 test-card">
+                            <img src="/images/lab-test-icon.jpg" style="max-width: 100px;" alt="">
+                            <div class="card-content ms-3">
+                                <p class="fw-semibold m-0 mb-1">Rheumatoid Factor (RA) Quantitative <span class="small text-body-tertiary">(1 Test Included)</span></p>
+                                <p class="small m-0 mb-1 text-body-tertiary">MRP <strike>₹144.30</strike></p>
+                                <div class="d-flex justify-content-between align-item-center">
+                                    <p class="fw-bold product-price m-0">₹132.76 <span class="discount">(8%)</span></p>
+                                    <button class="add-btn small">Add</button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#">
+                        <div class="lab-test-card card d-flex flex-row justify-content-between align-item-center w-100 test-card">
+                            <img src="/images/lab-test-icon.jpg" style="max-width: 100px;" alt="">
+                            <div class="card-content ms-3">
+                                <p class="fw-semibold m-0 mb-1">Rheumatoid Factor (RA) Quantitative <span class="small text-body-tertiary">(1 Test Included)</span></p>
+                                <p class="small m-0 mb-1 text-body-tertiary">MRP <strike>₹144.30</strike></p>
+                                <div class="d-flex justify-content-between align-item-center">
+                                    <p class="fw-bold product-price m-0">₹132.76 <span class="discount">(8%)</span></p>
+                                    <button class="add-btn small">Add</button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Ad banner home -->
+        <a class="wrapper" href="#"><img class="img-fluid" src="/images/add-banner-home.jpg" alt=""></a>
+
+        <!-- Frequently Booked Lab Tests -->
+        <div class="frequently-booked-lab-test-slider wrapper">
+            <div class="section-title pb-3 d-flex justify-content-between align-item-center">
+                <h5 class="fw-semibold">Frequently Booked Lab Tests</h5>
+                
+            </div>
+            <div class="frequently-booked-lab-test-carousel owl-carousel owl-theme">
+                <div class="item"><a href="#"><img class="img-fluid" src="/images/frequently-booked-lab-test-banner.jpg"
+                            alt=""></a></div>
+                <div class="item"><a href="#"><img class="img-fluid" src="/images/frequently-booked-lab-test-banner.jpg"
+                            alt=""></a></div>
+            </div>
+        </div>
+
+        
+        <!-- grab the offer -->
+        <div class="lab-testing-slider wrapper">
+            <div class="section-title pb-3 d-flex justify-content-between align-item-center">
+                <h5 class="fw-semibold">Grab the offer</h5>
+                
+            </div>
+            <div class="top-labTest-carousel owl-carousel owl-theme">
+                <div class="item"><a href="#"><img src="/images/offer-banner-1.png" alt=""></a></div>
+                <div class="item"><a href="#"><img src="/images/offer-banner-2.png" alt=""></a></div>
+                <div class="item"><a href="#"><img src="/images/offer-banner-3.png" alt=""></a></div>
+                <div class="item"><a href="#"><img src="/images/offer-banner-4.png" alt=""></a></div>
+            </div>
+        </div>
+
+        <!-- Health Articles -->
+        <div class="article-slider wrapper">
+            <div class="section-title pb-3 d-flex justify-content-between align-item-center">
+                <h5 class="fw-semibold">Health Articles</h5>
+                <a class="text-decoration-underline text-link" href="#">View All</a>
+            </div>
+            <div class="article-carousel owl-carousel owl-theme">
+                <div class="item"><a href="#">
+                        <div class="blog-card card">
+                            <img src="/images/blog-img.jpg" class="img-fluid mb-3" alt="">
+                            <p class="category-tag small fw-medium">Technology</p>
+                            <h6 class="fw-semibold">The Impact of Technology on the Workplace: How Technology is
+                                Changing</h6>
+                            <p class="text-body-tertiary m-0">August 20, 2022</p>
+                        </div>
+                    </a></div>
+                <div class="item"><a href="#">
+                        <div class="blog-card card">
+                            <img src="/images/blog-img.jpg" class="img-fluid mb-3" alt="">
+                            <p class="category-tag small fw-medium">Technology</p>
+                            <h6 class="fw-semibold">The Impact of Technology on the Workplace: How Technology is
+                                Changing</h6>
+                            <p class="text-body-tertiary m-0">August 20, 2022</p>
+                        </div>
+                    </a></div>
+                <div class="item"><a href="#">
+                        <div class="blog-card card">
+                            <img src="/images/blog-img.jpg" class="img-fluid mb-3" alt="">
+                            <p class="category-tag small fw-medium">Technology</p>
+                            <h6 class="fw-semibold">The Impact of Technology on the Workplace: How Technology is
+                                Changing</h6>
+                            <p class="text-body-tertiary m-0">August 20, 2022</p>
+                        </div>
+                    </a></div>
+                <div class="item"><a href="#">
+                        <div class="blog-card card">
+                            <img src="/images/blog-img.jpg" class="img-fluid mb-3" alt="">
+                            <p class="category-tag small fw-medium">Technology</p>
+                            <h6 class="fw-semibold">The Impact of Technology on the Workplace: How Technology is
+                                Changing</h6>
+                            <p class="text-body-tertiary m-0">August 20, 2022</p>
+                        </div>
+                    </a></div>
+            </div>
+        </div>
+
+        <!-- why choose  -->
+        <div class="wrapper">
+            <div class="why-choose">
+                <h5 class="fw-semibold mb-3">Why Choose Us</h5>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="why-choose-card card">
+                            <img src="/images/why-icon-1.svg" class="mb-2" alt="" style="max-width: 42px;">
+                            <p class="fw-semibold">Book & Relax</p>
+                            <p class="text-body-tertiary m-0">We realize ideas from simple to complex, everything
+                                becomes easy to use</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="why-choose-card card">
+                            <img src="/images/why-icon-1.svg" class="mb-2" alt="" style="max-width: 42px;">
+                            <p class="fw-semibold">Book & Relax</p>
+                            <p class="text-body-tertiary m-0">We realize ideas from simple to complex, everything
+                                becomes easy to use</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="why-choose-card card">
+                            <img src="/images/why-icon-1.svg" class="mb-2" alt="" style="max-width: 42px;">
+                            <p class="fw-semibold">Book & Relax</p>
+                            <p class="text-body-tertiary m-0">We realize ideas from simple to complex, everything
+                                becomes easy to use</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="review-section wrapper">
+            <div class="section-title pb-3 d-flex justify-content-between align-item-center">
+                <h5 class="fw-semibold">We’re loyal with our customersr</h5>
+                
+            </div>
+            <div class="review-carousel owl-carousel owl-theme">
+                <div class="item">
+                    <div class="review-card card">
+                        <div
+                            class="card-header p-0 border-0 bg-transparent d-flex justify-content-start align-item-center">
+                            <img src="/images/review-img.png" class="me-3" alt="review-img" style="max-width: 64px;">
+                            <div class="review-details">
+                                <p class="name m-0 fw-semibold">Ramesh Kumar <span class="text-body-tertiary">|</span>
+                                    <span class="location text-body-tertiary">New Delhi</span>
+                                </p>
+                                <div class="rating d-flex justify-content-start align-item-center">
+                                    <img class="me-2" style="max-width: 18px;" src="/images/star.svg" alt="">
+                                    <img class="me-2" style="max-width: 18px;" src="/images/star.svg" alt="">
+                                    <img class="me-2" style="max-width: 18px;" src="/images/star.svg" alt="">
+                                    <img class="me-2" style="max-width: 18px;" src="/images/star.svg" alt="">
+                                    <img class="me-2" style="max-width: 18px;" src="/images/star.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body p-0 pt-3">
+                            <p class="m-0">Lorem ipsum dolor sit amet consectetur. Placerat et commodo velit pulvinar
+                                vel lectus
+                                placerat etiam.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- App download banner home -->
+        <a class="wrapper" href="#"><img class="img-fluid" src="/images/app-banner.png" alt=""></a>
+    </div>
+    <custom-footer></custom-footer>
+
+
+    <!-- Owl carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
+        integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Custom Script -->
+    <script src="/src/js/main.js"></script>
+    <script src="/src/js/header.js"></script>
+    <script src="/src/js/footer.js"></script>
+    <!-- bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

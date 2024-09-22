@@ -13,7 +13,7 @@ class CustomFooter extends HTMLElement {
                                 and more.</p>
                         </div>
                         <div class="col-md-6">
-                            <div class="d-flex justify-content-end align-item-center">
+                            <div class="d-flex justify-content-end align-item-center newsletter-section">
                                 <div class="me-2">
                                     <label for="newletterEmail" class="visually-hidden">Email Id</label>
                                     <input type="email" class="form-control" id="newletterEmail"
@@ -43,7 +43,7 @@ class CustomFooter extends HTMLElement {
                         <a href="#" class="footer-link">Find Nearest Collection Centre</a>
                     </div>
                     <div class="footer-item">
-                        <p class="fw-semibold text-white">Policy Infos</p>
+                        <p class="fw-semibold text-white">Policy Info</p>
                         <a href="#" class="footer-link">Privacy Policy</a>
                         <a href="#" class="footer-link">Terms and Conditions</a>
                         <a href="#" class="footer-link">Customer Support Policy</a>
@@ -70,7 +70,7 @@ class CustomFooter extends HTMLElement {
                         <div class="col-md-6">
                             <a href="#"><img src="/images/logo.png" alt="logo"></a>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6 copyright-text">
                             <p class="text-end m-0">© 2024 HeartBeatmed. All Rights Reserved.</p>
                         </div>
                     </div>

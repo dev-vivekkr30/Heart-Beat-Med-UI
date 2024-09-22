@@ -21,15 +21,17 @@
 <body>
     <!-- Navigation bar -->
     <custom-header></custom-header>
+    <!-- Mobile Menu -->
+     <custom-mob-header></custom-mob-header>
     <!-- Navigation bar ends -->
     <div class="container wrapper">
         <!-- header banner -->
         <div class="row">
             <div class="col-md-6">
-                <a href="#"><img class="w-100" src="/images/medicine_banner.jpg" alt=""></a>
+                <a class="header-banner" href="#"><img class="w-100" src="/images/medicine_banner.jpg" alt=""></a>
             </div>
             <div class="col-md-6">
-                <a href="#"><img class="w-100" src="/images/lab_testing_banner.jpg" alt=""></a>
+                <a class="header-banner" href="#"><img class="w-100" src="/images/lab_testing_banner.jpg" alt=""></a>
             </div>
         </div>
         <!-- header banners ends -->
@@ -37,7 +39,7 @@
         <!-- lab testing banner carousel -->
         <div class="lab-testing-slider wrapper">
             <div class="section-title pb-3 d-flex justify-content-between align-item-center">
-                <h5 class="fw-semibold">Lab Tests</h5>
+                <h5 class="fw-semibold section-heading">Lab Tests</h5>
                 
             </div>
             <div class="top-labTest-carousel owl-carousel owl-theme">
@@ -48,8 +50,8 @@
 
         <!-- explore-top-category -->
         <div class="medicine-category wrapper">
-            <h5 class="fw-semibold pb-3">Explore top medicine category </h5>
-            <div class="row d-flex justify-content-between align-item-center w-100">
+            <h5 class="fw-semibold pb-3 section-heading">Explore top medicine category </h5>
+            <div class="row category-cards d-flex justify-content-start align-item-center w-100 m-auto">
                 <a href="#" class="med-card-link">
                     <div class="med-card">
                         <img src="/images/top-products.png" class="med-card-img img-fluid mb-3" alt="">
@@ -92,9 +94,6 @@
                         <p class="fw-medium text-center">Top Products</p>
                     </div>
                 </a>
-
-            </div>
-            <div class="row d-flex justify-content-between align-item-center w-100">
                 <a href="#" class="med-card-link">
                     <div class="med-card">
                         <img src="/images/top-products.png" class="med-card-img img-fluid mb-3" alt="">
@@ -137,14 +136,13 @@
                         <p class="fw-medium text-center">Top Products</p>
                     </div>
                 </a>
-
             </div>
         </div>
 
         <!-- Treanding near you carousel -->
         <div class="treandingMed-slider wrapper">
             <div class="section-title pb-3 d-flex justify-content-between align-item-center">
-                <h5 class="fw-semibold">Trending Near You</h5>
+                <h5 class="fw-semibold section-heading">Trending Near You</h5>
                 
             </div>
             <div class="treandingMed-carousel owl-carousel owl-theme">
@@ -232,7 +230,7 @@
         <!-- Frequently Booked Lab Tests -->
         <div class="frequently-booked-lab-test-slider wrapper">
             <div class="section-title pb-3 d-flex justify-content-between align-item-center">
-                <h5 class="fw-semibold">Frequently Booked Lab Tests</h5>
+                <h5 class="fw-semibold section-heading">Frequently Booked Lab Tests</h5>
                 
             </div>
             <div class="frequently-booked-lab-test-carousel owl-carousel owl-theme">
@@ -246,7 +244,7 @@
         <!-- New Launches -->
         <div class="treandingMed-slider newLaunched-slider wrapper">
             <div class="section-title pb-3 d-flex justify-content-between align-item-center">
-                <h5 class="fw-semibold">New Launches</h5>
+                <h5 class="fw-semibold section-heading">New Launches</h5>
                 
             </div>
             <div class="medicine-carousel treandingMed-carousel newLaunched-carousel owl-carousel owl-theme">
@@ -331,7 +329,7 @@
         <!-- Deal of the day -->
         <div class="treandingMed-slider dealDay-slider wrapper">
             <div class="section-title pb-3 d-flex justify-content-between align-item-center">
-                <h5 class="fw-semibold">Deals of the Day</h5>
+                <h5 class="fw-semibold section-heading">Deals of the Day</h5>
                 
             </div>
             <div class="medicine-carousel treandingMed-carousel dealDay-carousel owl-carousel owl-theme">
@@ -416,7 +414,7 @@
         <!-- grab the offer -->
         <div class="lab-testing-slider wrapper">
             <div class="section-title pb-3 d-flex justify-content-between align-item-center">
-                <h5 class="fw-semibold">Grab the offer</h5>
+                <h5 class="fw-semibold section-heading">Grab the offer</h5>
                 
             </div>
             <div class="top-labTest-carousel owl-carousel owl-theme">
@@ -430,7 +428,7 @@
         <!-- Health Articles -->
         <div class="article-slider wrapper">
             <div class="section-title pb-3 d-flex justify-content-between align-item-center">
-                <h5 class="fw-semibold">Health Articles</h5>
+                <h5 class="fw-semibold section-heading">Health Articles</h5>
                 <a class="text-decoration-underline text-link" href="#">View All</a>
             </div>
             <div class="article-carousel owl-carousel owl-theme">
@@ -476,7 +474,7 @@
         <!-- why choose  -->
         <div class="wrapper">
             <div class="why-choose">
-                <h5 class="fw-semibold mb-3">Why Choose Us</h5>
+                <h5 class="fw-semibold section-heading mb-3">Why Choose Us</h5>
                 <div class="row">
                     <div class="col-md-4">
                         <div class="why-choose-card card">
@@ -507,7 +505,7 @@
         </div>
         <div class="review-section wrapper">
             <div class="section-title pb-3 d-flex justify-content-between align-item-center">
-                <h5 class="fw-semibold">We’re loyal with our customersr</h5>
+                <h5 class="fw-semibold section-heading">We’re loyal with our customersr</h5>
                 
             </div>
             <div class="review-carousel owl-carousel owl-theme">
@@ -555,6 +553,7 @@
     <!-- Custom Script -->
     <script src="/src/js/main.js"></script>
     <script src="/src/js/header.js"></script>
+    <script src="/src/js/mobile_header.js"></script>
     <script src="/src/js/footer.js"></script>
     <!-- bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

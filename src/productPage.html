@@ -21,13 +21,22 @@
 <body>
     <!-- Navigation bar -->
     <custom-header></custom-header>
+    <custom-mob-header></custom-mob-header>
     <!-- Navigation bar ends -->
     <div class="container wrapper">
+        <div class="breadcrumbs d-flex justify-content-start align-items-center mb-2">
+            <a class="breadcrumbs-link small" href="#">Home</a>
+            <i class="bi bi-chevron-right"></i>
+            <a class="breadcrumbs-link small" href="#">Healthcare</a>
+            <i class="bi bi-chevron-right small"></i>
+            <a class="breadcrumbs-link breadcrumbs-active-link small" href="#">Liveasy Wellness Calcium
+                Magnesium Vitamin D3 & Zinc</a>
+        </div>
         <div class="row">
             <!-- product image and product details -->
             <div class="col-md-6 product-img-side">
                 <!-- product-image slider-->
-                <div class="product-img-slider" style="height: 478px;">
+                <div class="product-img-slider">
                     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -119,14 +128,6 @@
 
             <!-- product details section -->
             <div class="col-md-6 product-details">
-                <div class="breadcrumbs d-flex justify-content-start align-items-center mb-2">
-                    <a class="breadcrumbs-link small" href="#">Home</a>
-                    <i class="bi bi-chevron-right"></i>
-                    <a class="breadcrumbs-link small" href="#">Healthcare</a>
-                    <i class="bi bi-chevron-right small"></i>
-                    <a class="breadcrumbs-link breadcrumbs-active-link small" href="#">Liveasy Wellness Calcium
-                        Magnesium Vitamin D3 & Zinc</a>
-                </div>
                 <div>
                     <h5 class="product-name fw-semibold">Liveasy Wellness Calcium Magnesium Vitamin D3 & Zinc - Bones &
                         Dental Health - Bottle 60 Tabs</h5>
@@ -244,9 +245,80 @@
                     </div>
                 </div>
             </div>
+            <!-- Mobile Product Deatils -->
+
+            <div class="accordion mob-accordion border-0" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item border-0 border-top">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button fw-semibold" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                            aria-controls="panelsStayOpen-collapseOne">
+                            Description
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                        <div class="accordion-body">
+                            Helps to build strong bones and dental health. Promotes joint ease and comfort in
+                            arthritis. Promotes formation of bones & delays resorption. Supports the body’s bone
+                            repair and healing processes. Improves the immune system and inflammatory response.
+                            Maintains healthy levels of Vitamin D and minerals. It is useful for bones and teeth
+                            from oxidative damages. Helps to relieve pain and discomfort in arthritis
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item border-0 border-top">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-semibold" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo"
+                            aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                            Key benefits
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            Helps to build strong bones and dental health. Promotes joint ease and comfort in
+                            arthritis. Promotes formation of bones & delays resorption. Supports the body’s bone
+                            repair and healing processes. Improves the immune system and inflammatory response.
+                            Maintains healthy levels of Vitamin D and minerals. It is useful for bones and teeth
+                            from oxidative damages. Helps to relieve pain and discomfort in arthritis
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item border-0 border-top">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-semibold" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree"
+                            aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                            Ingredients and Benefits
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            Helps to build strong bones and dental health. Promotes joint ease and comfort in
+                            arthritis. Promotes formation of bones & delays resorption. Supports the body’s bone
+                            repair and healing processes. Improves the immune system and inflammatory response.
+                            Maintains healthy levels of Vitamin D and minerals. It is useful for bones and teeth
+                            from oxidative damages. Helps to relieve pain and discomfort in arthritis
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
+    <!-- Mobile Price Section -->
+    <div class="container-fluid mob-price-section">
+        <div class="container price-section mt-2 d-flex justify-content-between align-items-center">
+            <div class="product-price">
+                <div class="price">₹132.76 <span
+                        style="color: #546881; font-size: 25px; font-weight: 500;">(8%)</span><span
+                        style="color: #A3ADBB; font-size: 16px; font-weight: normal;">
+                        MRP <strike>₹144.30</strike></span></div>
+                <p>Inclusive of all taxes</p>
+            </div>
+            <button class="primary-btn">Add to cart</button>
+        </div>
+    </div>
     <!-- alternatives -->
     <div class="container">
         <div class="treandingMed-slider wrapper">
@@ -433,6 +505,7 @@
     <script src="/src/js/main.js"></script>
     <script src="/src/js/header.js"></script>
     <script src="/src/js/footer.js"></script>
+    <script src="/src/js/mobile_header.js"></script>
     <!-- bootstrap JS -->
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"

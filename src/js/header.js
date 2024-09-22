@@ -2,13 +2,13 @@ class CustomHeader extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
 
-        <nav class="navbar navbar-expand-lg bg-body-transparent">
+        <nav class="navbar navbar-expand-lg bg-body-transparent desktop-nav">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><img src="/images/logo.png" alt="" srcset=""></a>
-          <div class="align-items-center" id="navbarSupportedContent">
+          <div class="align-items-center w-100" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto align-items-center mb-2 mb-lg-0">
               <li class="nav-item">
-                <div class="get-location ps-4 pe-4">
+                <div class="get-location ps-4 pe-4" style="width: max-content;">
                     <p class="small m-0 mb-1"><span class="me-1"><img src="/images/truck.svg" alt=""></span>Fast Delivery to
                     </p>
                     <div class="dropdown">
@@ -25,8 +25,8 @@ class CustomHeader extends HTMLElement {
                     </div>
                 </div>
               </li>
-              <li class="nav-item">
-                <form class="d-flex dropdown" style="width: 656px;" role="search">
+              <li class="nav-item w-100">
+                <form class="d-flex dropdown" role="search">
                     <input class="form-control dropdown-toggle w-100" type="search" placeholder="Search" aria-label="Search" data-bs-toggle="dropdown" aria-expanded="false">
                     <ul class="dropdown-menu w-100 mt-2">
                         <li><a class="dropdown-item" href="#">Med 1</a></li>
@@ -36,11 +36,11 @@ class CustomHeader extends HTMLElement {
                 </form>
               </li>
               <li class="nav-item">
-                <button class="ms-4 me-2 btn primary-btn pt-0 pb-0" style="font-size: 13px !important; font-weight: 500;"><span class="xsmall">Order with
+                <button class="ms-4 me-2 btn primary-btn pt-0 pb-0" style="font-size: 13px !important; font-weight: 500;width: max-content;"><span class="xsmall">Order with
                     prescription</span><br><i class="bi bi-cloud-arrow-up"></i> Upload Now</button>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-disabled="true"> <button class="btn secondary-btn" style="font-size: 13px !important; font-weight: 500;"><i class="bi bi-person" style="font-size: 16px;"></i> Login/Signup</button></a>
+                <a class="nav-link" aria-disabled="true" style="width: max-content;"> <button class="btn secondary-btn" style="font-size: 13px !important; font-weight: 500;"><i class="bi bi-person" style="font-size: 16px;"></i> Login/Signup</button></a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" aria-disabled="true"><img src="/images/cart.svg" alt=""></a>

@@ -1,0 +1,270 @@
+@media only screen and (max-width:1024px) {
+    .desktop-nav, .nav-menu{
+        display: none !important;
+    }
+    .mobile-menu{
+        display: block !important;
+    }
+}
+@media only screen and (min-width:1024px) {
+    .desktop-nav, .nav-menu{
+        display: block !important;
+    }
+    .mobile-menu{
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .medicine-category .row .med-card-link{
+        width: 174px;
+    }
+    #newletterEmail{
+        width: 100% !important;
+    }
+    .treandingMed-slider .treandingMed-carousel .medicine-card{
+        width: 100% !important;
+    }
+    .filter-section{
+        display: none;
+    }
+    .filter-btn{
+        display: block;
+    }
+    .result-section{
+        width: 100% !important;
+    }
+    .result-section .result-card .row a .medicine-card{
+        width: 280px !important;
+    }
+    /* Product Page */
+    .product-name{
+        font-size: 18px;
+    }
+    .delivery-section .expected-delievry{
+        font-size: 14px;
+    }
+    .product-discription{
+        word-wrap: break-word;
+    }
+    .price-section{
+        justify-content: flex-start;
+    }
+    .price-section .product-price{
+        width: 50%;
+    }
+    .price-section .product-price .price{
+        font-size: 24px;
+        width: fit-content;
+    }
+    .price-section .product-price .price span{
+        font-size: 16px !important;
+        width: fit-content;
+    }
+    .price-section .product-price p{
+        font-size: 12px !important;
+        width: fit-content;
+    }
+    /* Order Review Page */
+    .upload-section{
+        flex-direction: column !important;
+    }
+    .upload-section .col-md-6{
+        margin-bottom: 6px;
+        width: 100% !important;
+    }
+    .lab-test-orders .lab-test-card p{
+        text-wrap: wrap !important;
+    }
+    .coupons .coupons-btn{
+        margin-top: 16px;
+    }
+  }
+
+@media screen and (max-width: 768px){
+    .header-banner{
+        margin-bottom: 16px !important;
+    }
+    .medicine-category .row .med-card-link{
+        width: 170px;
+    }
+    .treandingMed-slider .treandingMed-carousel .medicine-card{
+        width: 100% !important;
+    }
+    .why-choose .why-choose-card{
+        margin-bottom: 16px;
+    }
+    .newsletter-section{
+        flex-flow: column;
+        margin-top: 16px;
+    }
+    .newsletter-section #newletterEmail{
+        margin-bottom: 12px;
+    }
+    .copyright-text p{
+        margin-top: 16px !important;
+        text-align: left !important;
+    }
+    .search-result-section {
+        max-width: 100% !important;
+    }
+    .item-price-bar .container{
+        max-width: 100% !important;
+    }
+    .result-section .result-card .row a .medicine-card {
+        width: 100% !important;
+    }
+
+    /* Product Page */
+    .product-img-side{
+        border-right: none !important;
+    }
+    .product-img-side .product-img-slider {
+        height: calc(100vw);
+    }
+    .price-section{
+        padding-top: 12px;    
+    }
+    .price-section .product-price .price{
+        margin: 0px !important;
+        line-height: 16px !important;
+    }
+    .accordion{
+        display: none;
+    }
+    .mob-accordion{
+        margin-top: 16px;
+        display: block;
+    }
+    .price-section{
+        display: none !important;
+    }
+    .mob-price-section{
+        background-color: var(--primary-light);
+        position:fixed;
+        z-index: 234;
+        bottom: 0;
+        box-shadow: 0px -4px 24px #00000017;
+    }
+    .mob-price-section .price-section{
+        display: flex !important;
+        border: none !important;
+    }
+    .mob-order-btn{
+        display: block;
+    }
+}
+
+@media (max-width: 576px) {
+    .search-result-section {
+        max-width: 100% !important;
+    }
+    .item-price-bar .bottom-bar .item-count{
+        font-size: 18px !important;
+        flex-flow: column;
+        align-items: start;
+    }
+    .item-price-bar .bottom-bar .item-count .saved-amt{
+        margin: 0px !important;
+    }
+    .item-price-bar .bottom-bar .price-btn{
+        padding: 6px 24px;
+        width: fit-content;
+    }
+    .result-section .result-card .row a{
+        width: 50% !important;
+    }
+    .medicine-card {
+        width: 100% !important;
+    }
+    .section-title h6{
+        font-size: 16px;
+    }
+    .category-title{
+        align-items: start !important;
+        flex-direction: column;
+    }
+    .category-title .filter-options{
+        width: 100%;
+        margin-top: 12px;
+        font-size: 14px !important;
+    }
+}
+
+@media screen and (max-width: 560px){
+    .search-result-section{
+        width: 100%;
+    }
+    .medicine-category .row .med-card-link{
+        width: 160px;
+    }
+    .category-cards{
+        gap: 20px;
+    }
+    .section-heading{
+        font-size: 18px !important;
+        margin: 0px !important;
+    }
+    .why-choose .section-heading{
+        margin: 16px !important;
+    }
+    .main-footer{
+        padding: 32px 0px;
+    }
+    .main-footer .footer-subscibe{
+        padding-bottom: 16px;
+    }
+    .dropdown-menu{
+        position: absolute;
+        inset: 0px auto auto 0px;
+        margin: 0px;
+        transform: translate3d(-140px, 28px, 0px) !important;
+        width: 340px !important;
+    }
+    .result-section .result-card .row a{
+        width: 100% !important;
+    }
+    .medicine-card {
+        width: 100% !important;
+    }
+}
+@media screen and (max-width: 460px){
+    .medicine-category .row .med-card-link{
+        width: 118px;
+    }
+    .category-cards{
+        gap: 6px;
+    }
+
+    .wrapper {
+        padding-top: 20px !important;
+    }
+    .delievr-to{
+        font-size: 14px;
+    }
+    .delievry-details-view .location-pincode{
+        padding: 4px 6px;
+    }
+    .delievry-details-view .delievry-time{
+        font-size: 14px;
+        padding: 4px 12px;
+    }
+    .added-med h6{
+        font-size: 16px;
+    }
+    .added-med .med-price{
+        flex-direction: column;
+    }
+    .added-med .med-price .add-btn-active{
+        width: fit-content;
+        margin-top: 6px;
+    }
+}
+@media screen and (max-width: 360px){
+    .medicine-category .row .med-card-link{
+        width: 104px;
+    }
+    .category-cards{
+        gap: 10px;
+    }
+}
