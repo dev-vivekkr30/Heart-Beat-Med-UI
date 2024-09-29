@@ -369,6 +369,17 @@ a {
     border-color: var(--primary-light-active);
     color: var(--dark-dark);
 }
+
+#mobile-menu-nav-items .offcanvas-body .navbar-nav .dropdown .dropdown-menu{
+    position: relative !important;
+    transform: none !important;
+    left: 0px !important;
+    margin: 0px !important;
+    margin-bottom: 12px !important;
+    border: none;
+    transition: all ease-in 0.4s;
+}
+
 /* medicine category */
 .medicine-category .row .med-card-link {
     width: fit-content;
@@ -1077,4 +1088,109 @@ a {
     transform: translate3d(-140px, 28px, 0px);
     left: 138px !important;
     margin-top: 12px !important;
+}
+
+.modal-dialog{
+    max-width: 720px;
+}
+
+.usps{
+    background-color: var(--primary-light);
+    padding: 24px;
+    border-radius: 14px;
+}
+
+.contact-details-card{
+    border: 1px solid var(--primary-light-active);
+    padding: auto 91px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 232px;
+    border-radius: 14px;
+}
+
+.contact-details-card img{
+    max-width: 62px;
+
+}
+
+.contact-form{
+    background-color: var(--primary-light);
+    padding: 100px;
+    border-radius: 14px;
+    margin-top: 24px;
+}
+
+.profile-side-menu .navbar{
+    background-color: var(--white) !important;
+    border-radius: 14px;
+    border: 1px solid var(--dark-light);
+    padding: 16px;
+    justify-content: start;
+}
+
+.profile-side-menu .navbar .navbar-nav .nav-item{
+    width: 100% !important;
+}
+.profile-side-menu .navbar .navbar-nav .nav-item .active{
+    background-color: var(--primary-normal);
+    color: var(--white);
+    border-radius: 7px;
+    padding-left: 12px;
+}
+
+.userProfile .details-tab{
+    background-color: var(--dark);
+    padding: 32px 24px;
+    border-radius: 14px;
+}
+
+.myAccountTitle{
+    font-weight: 500;
+    color: var(--primary-normal);
+    padding: 12px 12px 12px 0px;
+    width: fit-content;
+    border-bottom: 3px solid var(--primary-normal);
+}
+
+.delete-modal .modal-dialog{
+    max-width: fit-content;
+    margin: auto;
+}
+
+.delete-modal .modal-dialog .modal-body button{
+    padding: 6px 24px !important;
+    height: auto !important;
+}
+
+.medicine-order-card{
+    padding: 16px;
+    border: 1px solid var(--primary-light-hover);
+    border-radius: 7px;
+}
+
+.medicine-order-card .card-footer h6{
+    color: var(--primary-normal);
+    font-weight: bold;
+}
+
+.order-status-bar{
+    background-color: var(--secondary-light);
+    border: 1px solid var(--Secondary-normal);
+    border-radius: 14px;
+    margin-bottom: 12px;
+}
+
+.bank-details{
+    padding: 16px;
+    background-color: var(--dark);
+    border: 1px solid var(--dark-light);
+    border-radius: 14px;
+    margin-bottom: 12px;
+}
+
+.thankuModal .modal-dialog{
+    max-width: 480px;
 }

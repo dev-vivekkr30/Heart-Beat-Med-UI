@@ -190,3 +190,34 @@ $('.offer-carousel').owlCarousel({
         }
     }
 })
+
+
+// Showing error messages
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Initialize Bootstrap popover
+    var popoverTrigger = new bootstrap.Popover(document.getElementById('LoginInputNumber'));
+
+    // Handle button click
+    document.getElementById('getOtpBtn').addEventListener('click', function () {
+        var inputNumber = document.getElementById('LoginInputNumber').value;
+
+        // Check if the number is less than 10 digits
+        if (inputNumber.length < 10) {
+            // Show the popover with error message
+            popoverTrigger.show();
+        } else {
+            // Hide the popover in case the number is valid
+            popoverTrigger.hide();
+
+            // Proceed with the next steps like showing OTP modal, etc.
+            var otpModal = new bootstrap.Modal(document.getElementById('OTPModal'));
+            otpModal.show();
+        }
+    });
+
+    // Hide popover on input change
+    document.getElementById('LoginInputNumber').addEventListener('input', function () {
+        popoverTrigger.hide();
+    });
+});

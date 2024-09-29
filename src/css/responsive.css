@@ -5,6 +5,15 @@
     .mobile-menu{
         display: block !important;
     }
+    .profile-side-menu{
+        display: none !important;
+    }
+    .userProfile{
+        width: 100% !important;
+    }
+    .order-list{
+        width: 100%;
+    }
 }
 @media only screen and (min-width:1024px) {
     .desktop-nav, .nav-menu{
@@ -153,6 +162,18 @@
     .mob-order-btn{
         display: block;
     }
+
+    .modal-img{
+        display: none;
+    }
+
+    .contact-form{
+        padding: 64px !important;
+    }
+
+    .orderTrack .track p{
+        font-size: 12px !important;
+    }
 }
 
 @media (max-width: 576px) {
@@ -188,6 +209,25 @@
         width: 100%;
         margin-top: 12px;
         font-size: 14px !important;
+    }
+    .orderTrack{
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        row-gap: 12px !important;
+        margin:16px auto !important;
+    }
+    .orderTrack .line{
+        transform: rotate(90deg);
+        margin: 6px 2px;
+    }
+    .orderTrack .track{
+        flex-direction: row !important;
+        align-items: center !important;
+        column-gap: 16px !important;
+    }
+    .orderTrack .track p{
+        margin: 0px !important;
+        font-size: 16px !important;
     }
 }
 
@@ -230,7 +270,7 @@
 }
 @media screen and (max-width: 460px){
     .medicine-category .row .med-card-link{
-        width: 118px;
+        max-width: 108px;
     }
     .category-cards{
         gap: 6px;
@@ -258,6 +298,41 @@
     .added-med .med-price .add-btn-active{
         width: fit-content;
         margin-top: 6px;
+    }
+    .modal-body{
+        padding: 0px !important;
+    }
+    .loginContent{
+        padding: 1rem !important;
+    }
+
+    .contact-form{
+        padding: 32px !important;
+    }
+    .delivery-options{
+        flex-direction: column !important;
+        justify-content: flex-start !important;
+        align-items: flex-start !important;
+    }
+    .details-tab{
+        padding: 16px !important;
+    }
+    .delievry-details-view{
+        border-radius: 7px;
+        padding: 16px;
+        flex-direction: column-reverse;
+        display: flex;
+        row-gap: 8px;
+    }
+    .delete-modal .modal-body{
+        padding: 16px !important;
+    }
+    .order-opt{
+        flex-direction: column;
+        row-gap: 12px !important;
+    }
+    .order-opt button{
+        margin: 0px !important;
     }
 }
 @media screen and (max-width: 360px){

@@ -36,11 +36,11 @@ class CustomHeader extends HTMLElement {
                 </form>
               </li>
               <li class="nav-item">
-                <button class="ms-4 me-2 btn primary-btn pt-0 pb-0" style="font-size: 13px !important; font-weight: 500;width: max-content;"><span class="xsmall">Order with
+                <button class="ms-4 me-2 btn primary-btn pt-0 pb-0" style="font-size: 13px !important; font-weight: 500;width: max-content;"  data-bs-toggle="modal" data-bs-target="#uploadModal"><span class="xsmall">Order with
                     prescription</span><br><i class="bi bi-cloud-arrow-up"></i> Upload Now</button>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-disabled="true" style="width: max-content;"> <button class="btn secondary-btn" style="font-size: 13px !important; font-weight: 500;"><i class="bi bi-person" style="font-size: 16px;"></i> Login/Signup</button></a>
+                <a class="nav-link" aria-disabled="true" style="width: max-content;"> <button class="btn secondary-btn" style="font-size: 13px !important; font-weight: 500;" data-bs-toggle="modal" data-bs-target="#loginModal"><i class="bi bi-person" style="font-size: 16px;"></i> Login/Signup</button></a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" aria-disabled="true"><img src="/images/cart.svg" alt=""></a>
@@ -105,6 +105,61 @@ class CustomHeader extends HTMLElement {
               </div>
         </div>
       </div>
+
+
+      
+    <!-- Upload Precription popup -->
+    <div class="modal fade" id="uploadModal" tabindex="-1" aria-labelledby="uploadModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4 modal-img">
+                            <div class="sideImage">
+                                <img src="/images/login-side-img.png" class="img-fluid me-4" style="max-width: 228px;"
+                                    alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-8 p-4 d-flex flex-column align-items-start modal-input">
+                            <div class="loginContent p-2 w-100">
+                                <h5 class="fw-semibold">Upload your Precription</h5>
+                                <p>Enter your mobile number to get started</p>
+                                <div class="mb-1">
+                                    <label for="LoginInputNumber" class="form-label fw-medium">Phone Number</label>
+                                    <input type="number" class="form-control w-100" id="LoginInputNumber"
+                                        placeholder="Enter Your Number" data-bs-toggle="popover"
+                                        data-bs-trigger="manual" data-bs-placement="right"
+                                        data-bs-content="Please enter a valid 10-digit phone number.">
+                                </div>
+                                <div>
+                                    <label for="LoginInputNumber" class="form-label fw-medium">Upload
+                                        Precription</label>
+                                    <input type="file" class="form-control w-100" id="LoginInputNumber"
+                                        placeholder="Enter Your Number">
+                                </div>
+                                <button class="btn primary-btn mt-3" data-bs-toggle="modal" data-bs-target="#ThankYouModal">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Thankyou popup -->
+    <div class="modal thankuModal fade" id="ThankYouModal" tabindex="-1" aria-labelledby="ThankYouModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body m-3 d-flex flex-column align-items-center">
+                    <img class="mb-4" src="/images/tick-2.svg" alt="">
+                    <h6 class="text-center">Thanku for Uploading your prescription</h6>
+                    <p class="text-center m-0">Our represntative will connect with you shorty 😊</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
         
         `;
     }
