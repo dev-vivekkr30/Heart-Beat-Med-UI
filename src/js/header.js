@@ -4,7 +4,7 @@ class CustomHeader extends HTMLElement {
 
         <nav class="navbar navbar-expand-lg bg-body-transparent desktop-nav">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="/images/logo.png" alt="" srcset=""></a>
+          <a class="navbar-brand" href="/src/index.html"><img src="/images/logo.png" alt="" srcset=""></a>
           <div class="align-items-center w-100" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto align-items-center mb-2 mb-lg-0">
               <li class="nav-item">
@@ -155,6 +155,77 @@ class CustomHeader extends HTMLElement {
                     <img class="mb-4" src="/images/tick-2.svg" alt="">
                     <h6 class="text-center">Thanku for Uploading your prescription</h6>
                     <p class="text-center m-0">Our represntative will connect with you shorty 😊</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+       
+    <!-- Phone Number Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4 modal-img">
+                            <div class="sideImage">
+                                <img src="/images/login-side-img.png" class="img-fluid me-4" style="max-width: 228px;"
+                                    alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-8 p-4 d-flex flex-column align-items-start modal-input">
+                            <div class="loginContent p-4 w-100">
+                                <h5 class="fw-semibold">Quick Login / Register</h5>
+                                <p>Enter your mobile number to get started</p>
+                                <div class="mb-3">
+                                    <label for="LoginInputNumber" class="form-label fw-medium">Phone Number</label>
+                                    <input type="number" class="form-control w-100" id="LoginInputNumber"
+                                        placeholder="Enter Your Number" data-bs-toggle="popover"
+                                        data-bs-trigger="manual" data-bs-placement="right"
+                                        data-bs-content="Please enter a valid 10-digit phone number.">
+                                    <p class="text-muted small mt-1">By signing up, I agree to the Terms and Conditions
+                                    </p>
+                                </div>
+                                <button class="btn primary-btn" id="getOtpBtn">Get OTP</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Get Otp Modal -->
+    <div class="modal fade" id="OTPModal" tabindex="-1" aria-labelledby="OTPModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4 modal-img">
+                            <div class="sideImage">
+                                <img src="/images/login-side-img.png" class="img-fluid me-4" style="max-width: 228px;"
+                                    alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-8 p-4 d-flex flex-column align-items-start modal-input">
+                            <div class="loginContent p-4 w-100">
+                                <h5 class="fw-semibold">Great!</h5>
+                                <p>We have sent an OTP on +91 9319476620 <a href="#"
+                                        class="fw-semibold text-decoration-underline" data-bs-target="#loginModal"
+                                        data-bs-toggle="modal">Edit Number</a></p>
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label fw-medium">Enter OTP</label>
+                                    <input type="number" class="form-control w-100" id="LoginInputNumber"
+                                        placeholder="Enter OTP">
+                                    <!-- <div class="form-text error-text">We'll never share your email with anyone else.</div> -->
+                                    <p class="text-muted small mt-1">By signing up, I agree to the Terms and Conditions
+                                    </p>
+                                </div>
+                                <button class="btn primary-btn">Submit</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
